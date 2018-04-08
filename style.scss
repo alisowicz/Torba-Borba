@@ -57,6 +57,14 @@ a{
   width: 100%;
   transition: all 0.3s;
   z-index: 1;
+  box-shadow: 0 14px 11px -12px rgba(0, 0, 0, 0.2);
+}
+.borba_topbar-scroll{
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  color: #263f70;
+  transition: all 0.3s;
 
 }
 .borba-topbar_container{
