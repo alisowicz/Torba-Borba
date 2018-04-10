@@ -129,11 +129,19 @@ a{
         //   }
       }
 
+#borba_about{
+      background-image: url("css/icomoon/clock.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50%;
+
+}
 
 .borba_about_header {
   max-width: 50%;
   margin: 30px auto;
   padding: 75px;
+  z-index: 99;
   }
 .borba_about_header-title{
     font-size: 22px;
@@ -200,6 +208,10 @@ a{
         background-repeat: no-repeat;
       }
 }
+.borba_offer-product:nth-child(1){
+padding-top: 120px;
+}
+
 .borba_offer-split-3{
   width: 50%;
   flex: 1;
