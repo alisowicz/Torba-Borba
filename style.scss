@@ -58,6 +58,8 @@ a{
   transition: all 0.3s;
   z-index: 1;
   box-shadow: 0 14px 11px -12px rgba(0, 0, 0, 0.2);
+  padding: 0px 10px 20px 10px;
+
 }
 .borba_topbar-scroll{
   position: fixed;
@@ -65,6 +67,8 @@ a{
   background-color: white;
   color: #263f70;
   transition: all 0.3s;
+  padding: 0px 10px 0px 10px;
+
 
 }
 .borba-topbar_container{
@@ -112,7 +116,7 @@ a{
   align-items: center;
       .borba_front_background{
         background-image: url("css/images/bg.jpeg");
-        background-position: 50% 120%;
+        background-position: 50% 80%;
         background-size: cover;
         background-repeat: no-repeat;
         height: 122vh;
@@ -129,17 +133,22 @@ a{
         //   }
       }
 
+#margin{
+  width: 100%;
+  height: 10%;
+}
 #borba_about{
       background-image: url("css/icomoon/clock.svg");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: 50%;
+      margin-top: 110px;
 
 }
 
-.borba_about_header {
+#borba_about_header {
   max-width: 50%;
-  margin: 30px auto;
+  margin: 10px auto 30px auto;
   padding: 75px;
   z-index: 99;
   }
@@ -165,7 +174,7 @@ a{
   min-height: 1px;
   background-color: #263f70;
   opacity: 0.2;
-  width: 100%;
+  width: 30%;
   margin: 0 auto;
 }
 
@@ -201,11 +210,13 @@ a{
       .borba_offer-split-2{
         width: 50%;
         flex: 1;
-        background-image: url("css/images/about.jpeg");
+        background-image: url("css/images/handbag.jpeg");
         height: 250px;
         background-position: 50% 70%;
         background-size: cover;
         background-repeat: no-repeat;
+        filter: grayscale(80%);
+
       }
 }
 .borba_offer-product:nth-child(1){
@@ -215,20 +226,24 @@ padding-top: 120px;
 .borba_offer-split-3{
   width: 50%;
   flex: 1;
-  background-image: url("css/images/about.jpeg");
+  background-image: url("css/images/longbag.jpeg");
   height: 250px;
   background-position: 50% 70%;
   background-size: cover;
   background-repeat: no-repeat;
+  filter: grayscale(80%);
+
 }
 .borba_offer-split-4{
   width: 50%;
   flex: 1;
-  background-image: url("css/images/about.jpeg");
+  background-image: url("css/images/elegant.jpeg");
   height: 250px;
   background-position: 50% 70%;
   background-size: cover;
   background-repeat: no-repeat;
+  filter: grayscale(80%);
+
 }
 
 .borba-numers{
@@ -268,7 +283,7 @@ padding-top: 120px;
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-image: url("css/images/foto.jpg");
+    background-image: url("css/images/team1.jpeg");
     background-position: 50% 12%;
     background-size: cover;
     filter: grayscale(80%);
@@ -276,11 +291,11 @@ padding-top: 120px;
 .employee_header-photo-2 {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    background-image: url("css/images/foto.jpg");
+    background-image: url("css/images/team2.jpeg");
     background-position: 50% 12%;
     background-size: cover;
     filter: grayscale(80%);
+    clip-path: circle(50% at 50% 50%);
 }
 .employee_header-details{
   margin-left: 10px;
@@ -295,4 +310,20 @@ padding-top: 120px;
     font-weight: normal;
     margin: 0 0 10px 0;
     line-height: 23px;
+}
+.borba-contact{
+  width: 100%;
+  border: 1px solid red;
+}
+.contact-title{
+  text-align: center;
+  font-size: 30px;
+}
+.borba_contact_info{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 55px;
+  border: 1px solid red;
+
 }
