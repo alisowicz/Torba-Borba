@@ -6,6 +6,7 @@
       <link rel="stylesheet" href="style.css">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
       <link rel="stylesheet" href="css/icomoon/style.css">
+      <link rel="stylesheet" href="css/icomoon1/style.css">
 
       <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 
@@ -26,7 +27,7 @@
           <a href="#borba_offer">
             <div class="borba_topbar_menu-lista-element">Offer</div>
           </a>
-          <a href="#">
+          <a href="#borba_people">
             <div class="borba_topbar_menu-lista-element">Contact</div>
           </a>
         </div>
@@ -93,7 +94,7 @@
   </div>
 </section>
 <!-- team -->
-<section class="borba_people">
+<section id="borba_people">
   <div class="container">
     <div class="borba_people_box">
       <div class="employee-1">
@@ -104,7 +105,7 @@
               <h2 class="employee-name">Karolina</h2>
           </div>
         </div>
-        <div class="employee-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporull proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <div class="employee-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporull proident, sisicing elit, sed do eiusmod temporull proident, sunt in culpa qui officia deserunt mollit anim id estunt in culpa qui officia deserunt mollit anim id est laborum.</div>
       </div>
       <div class="employee-2">
         <div class="employee_header">
@@ -114,27 +115,45 @@
               <h2 class="employee-name">Anna</h2>
             </div>
         </div>
-        <div class="employee-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporull proident, sunt in culpa qui officia deserunt mollit anim id est</div>
+        <div class="employee-info">Lorem ipsum dolor sit amet, consectetur adipiisicing elit, sed do eiusmod temporull proident, sunt in culpa qui officia deserunt mollit anim id estsicing elit, sed do eiusmod temporull proident, sunt in culpa qui officia deserunt mollit anim id est</div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- contact -->
-<section class="borba_contact">
+<section id="borba_contact">
   <div class="container">
-    <h2 class="contact-title">Talk to me</h2>
-    <div class="borba_contact_info">
+    <div class="borba_contact_container">
       <div class="borba_contact-form">
+        <div class="contact-form__wrapper">
+          <form name="borba-contact" method="POST" action="index.php">
+                     <input type="text" class="borba-contact__input" placeholder="Name" name="name">
+                     <input type="email" class="borba-contact__input" placeholder="Email" name="email">
+                     <input type="tel" class="borba-contact__input" placeholder="Telephone" name="phone">
+                     <textarea class="borba-contact__textarea" name="message" id="borba-contact" cols="30" rows="5" placeholder="Message"></textarea>
+                     <button class="borba-contact__button" type="submit" name="submit">Send</button>
+                 </form>
+        </div>
 
       </div>
     <div class="borba_contact-adress">
+      <h2 class="contact-title">Talk to me</h2>
 
+      <div class="adress-details">
+        <div class="adress-icon"><span class=" icon-location"></span></div>
+        <p>Torba Borba<br>Yellow Street<br>London</p>
+      </div>
+      <div class="adress-details">
+        <div class="adress-icon"><span class=" icon-phone"></span></div>
+        <p>00 44 565 765 44</p>
+      </div>
+      <div class="adress-details">
+        <div class="adress-icon"><span class="icon-envelop"></span></div>
+        <p>torba@borba.com</p>
+      </div>
     </div>
   </div>
-
-
-
 
   </div>
 </section>
