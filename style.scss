@@ -1,18 +1,16 @@
-
-
-
 @media (min-width: 1024px) {
-.container {
+  .container {
     margin: 0 auto;
     width: 90%;
     max-width: 1128px;
+  }
 }
-}
-@media (min-width: 420px){
-.container {
-    margin: 0 4em;
-}
-}
+// @media (min-width: 420px) {
+//   .container {
+//     margin: 0 4em;
+//   }
+// }
+
 // @media (min-width: 1024px){
 // .borba_about_header {
 //     margin-left: auto;
@@ -40,7 +38,8 @@
 //     color: red;
 // }
 // }
-body{
+
+body {
   box-sizing: border-box;
   background-color: #F3F3F3;
   color: #263f70;
@@ -49,128 +48,137 @@ body{
   padding: 0;
   border: 0;
 }
-a{
+
+a {
   text-decoration: none;
 }
-.borba_topbar{
+
+.borba_topbar {
   position: fixed;
   width: 100%;
   transition: all 0.3s;
   z-index: 1;
   box-shadow: 0 14px 11px -12px rgba(0, 0, 0, 0.2);
-  padding: 0px 10px 20px 10px;
-
+  padding: 0 10px 20px;
 }
-.borba_topbar-scroll{
+
+.borba_topbar-scroll {
   position: fixed;
   width: 100%;
   background-color: white;
   color: #263f70;
   transition: all 0.3s;
-  padding: 0px 10px 0px 10px;
-
-
+  padding: 0 10px;
 }
-.borba-topbar_container{
+
+.borba-topbar_container {
   margin: 0 1em;
 }
-.borba_topbar_menu{
+
+.borba_topbar_menu {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  padding: 20px 10px 20px 10px;
+  padding: 20px 10px;
   transition: all 0.3s;
-   ;
 }
-.borba_topbar_menu-logo{
+
+.borba_topbar_menu-logo {
   color: #263f70;
   text-align: center;
-  font-weight:  lighter;
-
-
+  font-weight: lighter;
 }
-.borba_topbar_menu-lista{
+
+.borba_topbar_menu-lista {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-   ;
 }
-.borba_topbar_menu-lista-element{
-    color: #263f70;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    line-height: 23px;
-    text-align: left;
-    text-transform: uppercase;
-    margin-left: 60px;
-    transition: all .3s;
+
+.borba_topbar_menu-lista-element {
+  color: #263f70;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 23px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-left: 60px;
+  transition: all 0.3s;
 }
-.borba_front{
+
+.borba_front {
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-      .borba_front_background{
-        background-image: url("css/images/bg.jpeg");
-        background-position: 50% 80%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 122vh;
-        width: 100%;
-      }
-        // .h1{
-        //   font-size: 120px;
-        //   color: red;
-        //   display: flex;
-        //   flex: 1;
-        //   position: absolute;
-        //   justify-content: flex-end;
-        //   vertical-align: middle;
-        //   }
-      }
 
-#margin{
+  .borba_front_background {
+    background-image: url("css/images/bg.jpeg");
+    background-position: 50% 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 122vh;
+    width: 100%;
+  }
+  // .h1{
+  //   font-size: 120px;
+  //   color: red;
+  //   display: flex;
+  //   flex: 1;
+  //   position: absolute;
+  //   justify-content: flex-end;
+  //   vertical-align: middle;
+  //   }
+}
+
+#margin {
   width: 100%;
   height: 10%;
 }
-#borba_about{
-      background-image: url("css/icomoon/clock.svg");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 50%;
-      margin-top: 110px;
 
+#borba_about {
+  background-image: url("css/icomoon/clock.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  margin-top: 110px;
 }
+@media all and (min-width: 420px) {
+  #borba_about_header {
 
+  }
+}
 #borba_about_header {
-  max-width: 50%;
-  margin: 10px auto 30px auto;
+  width: 50%;
+  margin: 10px auto 30px;
   padding: 75px;
   z-index: 99;
-  }
-.borba_about_header-title{
-    font-size: 22px;
-    text-align: center;
-    letter-spacing: 1px;
-    line-height: 36px;
-    font-family: "Lehigh Personal", serif;
-    font-weight: bold;
-    margin-bottom: 6px;
-}
-.borba_about_header-text{
-    width: 100%;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
-    font-size: 1em;
-    line-height: 23px;
-    font-weight: 300;
-    margin-bottom: 40px
 }
 
-.borba_separator{
+.borba_about_header-title {
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 36px;
+  font-family: "Lehigh Personal", serif;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.borba_about_header-text {
+  width: 100%;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 23px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.borba_separator {
   min-height: 1px;
   background-color: #263f70;
   opacity: 0.2;
@@ -178,52 +186,63 @@ a{
   margin: 0 auto;
 }
 
-.borba_offer-product{
+@media all and (min-width: 420px) {
+  .borba_offer-product {
+    flex-direction: column;
+  }
+}
+
+.borba_offer-product {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-bottom: 55px;
-    .borba_offer-split-1{
-      width: 50%;
-      display: flex;
-      flex: 1;
-      flex-flow: column nowrap;
-      margin-right: 30px;
-        .split-1-category{
-          font-size: 11px;
-          font-weight: 500;
-          letter-spacing: 2px;
-          line-height: 13px;
-          margin: 0 0 10px 0;
-        }
-        .split-1-name{
-          font-size: 30px;
-          margin: 0 0 10px 0;
-        }
-        .split-1-text{
-          font-size: 1em;
-          font-weight: normal;
-          margin: 0 0 10px 0;
-          line-height: 23px;
-        }
+
+  .borba_offer-split-1 {
+    width: 50%;
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    margin-right: 30px;
+
+    .split-1-category {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      line-height: 13px;
+      margin: 0 0 10px;
     }
-      .borba_offer-split-2{
-        width: 50%;
-        flex: 1;
-        background-image: url("css/images/handbag.jpeg");
-        height: 250px;
-        background-position: 50% 70%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        filter: grayscale(80%);
 
-      }
-}
-.borba_offer-product:nth-child(1){
-padding-top: 120px;
+    .split-1-name {
+      font-size: 30px;
+      margin: 0 0 10px;
+    }
+
+    .split-1-text {
+      font-size: 1em;
+      font-weight: normal;
+      margin: 0 0 10px;
+      line-height: 23px;
+    }
+  }
+
+  .borba_offer-split-2 {
+    width: 50%;
+    flex: 1;
+    background-image: url("css/images/handbag.jpeg");
+    height: 250px;
+    background-position: 50% 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(80%);
+  }
 }
 
-.borba_offer-split-3{
+.borba_offer-product:nth-child(1) {
+  padding-top: 120px;
+}
+
+.borba_offer-split-3 {
   width: 50%;
   flex: 1;
   background-image: url("css/images/longbag.jpeg");
@@ -232,9 +251,9 @@ padding-top: 120px;
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(80%);
-
 }
-.borba_offer-split-4{
+
+.borba_offer-split-4 {
   width: 50%;
   flex: 1;
   background-image: url("css/images/elegant.jpeg");
@@ -243,113 +262,143 @@ padding-top: 120px;
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(80%);
-
 }
 
-.borba-numers{
-  background-color:  #263f70;
+.borba-numers {
+  background-color: #263f70;
   width: 100%;
   height: 200px;
 }
 
-.borba_people_box{
+
+@media all and (max-width: 420px) {
+  .borba_people_box {
+    flex-direction: column;
+  }
+}
+.borba_people_box {
   width: 100%;
-  padding: 90px 0px 50px;
-  height: calc(50vh + 20px);
+  padding: 90px 0 50px;
   display: flex;
   flex-direction: row;
   flex: 1;
 }
-.employee-1{
+
+.employee-1 {
   width: 50%;
   margin-right: 12px;
 }
-.employee-2{
+
+.employee-2 {
   width: 50%;
   margin-right: 6px;
 }
-.employee_header{
+
+.employee_header {
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
 }
-.place{
+
+.place {
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 2px;
   line-height: 13px;
 }
+
 .employee_header-photo-1 {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-image: url("css/images/team1.jpeg");
-    background-position: 50% 12%;
-    background-size: cover;
-    filter: grayscale(80%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("css/images/team1.jpeg");
+  background-position: 50% 12%;
+  background-size: cover;
+  filter: grayscale(80%);
 }
+
 .employee_header-photo-2 {
-    width: 150px;
-    height: 150px;
-    background-image: url("css/images/team2.jpeg");
-    background-position: 50% 12%;
-    background-size: cover;
-    filter: grayscale(80%);
-    clip-path: circle(50% at 50% 50%);
+  width: 150px;
+  height: 150px;
+  background-image: url("css/images/team2.jpeg");
+  background-position: 50% 12%;
+  background-size: cover;
+  filter: grayscale(80%);
+  clip-path: circle(50% at 50% 50%);
 }
-.employee_header-details{
+
+.employee_header-details {
   margin-left: 10px;
   margin-top: 65px;
 }
-.employee-name{
+
+.employee-name {
   font-size: 18px;
   font-weight: bold;
 }
-.employee-info{
-    font-size: 1em;
-    font-weight: normal;
-    margin: 0 0 10px 0;
-    line-height: 23px;
+
+.employee-info {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0 0 10px;
+  line-height: 23px;
 }
-#borba_contact{
+
+#borba_contact {
   width: 100%;
 }
-.contact-title{
+
+.contact-title {
   font-size: 30px;
-  margin-top: 0px;
+  margin-top: 0;
 }
-.borba_contact_container{
+
+@media all and (max-width: 420px) {
+  .borba_contact_container {
+      flex-direction: column;
+      margin: 0 4em;
+  }
+}
+
+.borba_contact_container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   margin-bottom: 55px;
 }
-.borba_contact-form{
+
+.borba_contact-form {
   width: 70%;
 }
-.borba_contact-adress{
+
+.borba_contact-adress {
   width: 30%;
   padding: 30px;
   background-color: white;
   display: flex;
   flex-direction: column;
-    .adress-details > p{
-      line-height: 20px;
-      font-weight: normal;
-      position: relative;
-      margin-left: 20px;
-        .icon-location:before {
-          content: "\e947";
-        }
-        .icon-phone:before {
-          content: "\e942";
-        }
-        .icon-envelop:before {
-          content: "\e945";
-        }
+
+  .adress-details > p {
+    line-height: 20px;
+    font-weight: normal;
+    position: relative;
+    margin-left: 20px;
+
+    .icon-location:before {
+      content: "\e947";
     }
+
+    .icon-phone:before {
+      content: "\e942";
+    }
+
+    .icon-envelop:before {
+      content: "\e945";
+    }
+  }
 }
-.adress-icon{
+
+.adress-icon {
   position: absolute;
   margin-left: -20px;
   margin-top: 19px;
@@ -400,4 +449,27 @@ padding-top: 120px;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 16px;
+}
+
+.borba_map{
+  width: 100%;
+  height: 454px;
+    .map-container{
+      width: 100%;
+      height: auto;
+      position: absolute;
+      margin: 0 auto;
+    }
+}
+
+.borba_footer{
+  width: 100%;
+    .footer-logo{
+      margin-left: 30px;
+      padding: 40px 0;
+      color: #263f70;
+      text-align: left;
+      font-weight: lighter;
+
+    }
 }
