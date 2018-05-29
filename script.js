@@ -1,13 +1,26 @@
-// document.addEventListener('DOMContentLoaded',function() {
-//   let menu = document.querySelector('.borba_topbar');
-//
-//   let change = function(){
-//     menu.classList.toggle('borba_topbar-scroll');
-//     // tu przyjmuje klase open okreslona w css
-//   }
-//   menu.addEventListener('scroll', change)
-// })
+// hamburger
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger-icon')
+  const przelaczHamburger = function() {
+    hamburger.classList.toggle('hamburger-open');
+  }
+  hamburger.addEventListener('click', przelaczHamburger)
+})
 
+// menu z hamburgera
+document.addEventListener('DOMContentLoaded',function() {
+  const hamburgerMenu = document.querySelector('.hamburger-icon');
+  const label = document.querySelector('.borba_topbar_menu-lista');
+
+  const Message = function(){
+    label.classList.toggle('open');
+    // tu przyjmuje klase open okreslona w css
+  }
+  hamburgerMenu.addEventListener('click', Message)
+})
+
+
+// zmiana rozmiaru menu przy scrollu
 const menu = function() {
    if(window.pageYOffset > 50) {
      document.querySelector('.borba_topbar').classList.add('borba_topbar-scroll');
@@ -15,7 +28,6 @@ const menu = function() {
      document.querySelector('.borba_topbar').classList.remove('borba_topbar-scroll')
     }
  }
-
  document.addEventListener('scroll', () => menu())
 
 

@@ -1,43 +1,4 @@
-@media (min-width: 1024px) {
-  .container {
-    margin: 0 auto;
-    width: 90%;
-    max-width: 1128px;
-  }
-}
-// @media (min-width: 420px) {
-//   .container {
-//     margin: 0 4em;
-//   }
-// }
 
-// @media (min-width: 1024px){
-// .borba_about_header {
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 30px;
-//     max-width: 840px;
-//     padding: 95px 140px 55px;
-// }
-// }
-// @media (min-width: 420px){
-// .borba_about_header {
-//     margin-bottom: 20px;
-// }
-// }
-// @media (min-width: 420px){
-// .borba_about_header-title{
-//     font-size: 24px;
-//     letter-spacing: 2px;
-// }
-// }
-// @media (min-width: 420px){
-// .borba_about_header-text {
-//     font-size: 46px;
-//     line-height: 30px;
-//     color: red;
-// }
-// }
 
 body {
   box-sizing: border-box;
@@ -52,14 +13,24 @@ body {
 a {
   text-decoration: none;
 }
-
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+  @media (min-width: 1024px) {
+      margin: 0 auto;
+      width: 90%;
+      max-width: 1128px;
+  }
+}
 .borba_topbar {
   position: fixed;
   width: 100%;
   transition: all 0.3s;
   z-index: 1;
   box-shadow: 0 14px 11px -12px rgba(0, 0, 0, 0.2);
-  padding: 0 10px 20px;
+  padding: 10px 10px;
+  background-color: #f1f0f0a8;
 }
 
 .borba_topbar-scroll {
@@ -88,12 +59,27 @@ a {
   color: #263f70;
   text-align: center;
   font-weight: lighter;
+  line-height: 1.5em;
 }
 
 .borba_topbar_menu-lista {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  transition: all 0.3s;
+
+  @media(max-width: 768px){
+    // IIsposob to moze byc display:none;
+      flex-direction: column;
+      background-color: #f1f0f0a8;
+      position: absolute;
+      top: 82px;
+      right:20px;
+
+      &.open {
+        right: -120px;
+      }
+  }
 }
 
 .borba_topbar_menu-lista-element {
@@ -106,6 +92,9 @@ a {
   text-transform: uppercase;
   margin-left: 60px;
   transition: all 0.3s;
+  @media(max-width: 768px){
+      margin-left: 17px;
+}
 }
 
 .borba_front {
@@ -121,19 +110,10 @@ a {
     background-position: 50% 80%;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 122vh;
+    height: 100vh;
     width: 100%;
   }
-  // .h1{
-  //   font-size: 120px;
-  //   color: red;
-  //   display: flex;
-  //   flex: 1;
-  //   position: absolute;
-  //   justify-content: flex-end;
-  //   vertical-align: middle;
-  //   }
-}
+  }
 
 #margin {
   width: 100%;
@@ -147,16 +127,17 @@ a {
   background-position: 50%;
   margin-top: 110px;
 }
-@media all and (min-width: 420px) {
-  #borba_about_header {
 
-  }
-}
 #borba_about_header {
-  width: 50%;
+// max-width: 340px;
+  padding: -5px;
+  z-index: 9;
   margin: 10px auto 30px;
-  padding: 75px;
-  z-index: 99;
+  max-width: 65ch;
+
+  @media (max-width: 768px){
+    width: 100%;
+  }
 }
 
 .borba_about_header-title {
@@ -186,20 +167,17 @@ a {
   margin: 0 auto;
 }
 
-@media all and (min-width: 420px) {
-  .borba_offer-product {
-    flex-direction: column;
-  }
-}
 
 .borba_offer-product {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 55px;
+  @media (max-width: 1024px) {
+      flex-direction: column;
+  }
 
   .borba_offer-split-1 {
-    width: 50%;
     display: flex;
     flex: 1;
     flex-flow: column nowrap;
@@ -227,7 +205,6 @@ a {
   }
 
   .borba_offer-split-2 {
-    width: 50%;
     flex: 1;
     background-image: url("css/images/handbag.jpeg");
     height: 250px;
@@ -243,7 +220,6 @@ a {
 }
 
 .borba_offer-split-3 {
-  width: 50%;
   flex: 1;
   background-image: url("css/images/longbag.jpeg");
   height: 250px;
@@ -254,7 +230,6 @@ a {
 }
 
 .borba_offer-split-4 {
-  width: 50%;
   flex: 1;
   background-image: url("css/images/elegant.jpeg");
   height: 250px;
@@ -270,27 +245,23 @@ a {
   height: 200px;
 }
 
-
-@media all and (max-width: 420px) {
-  .borba_people_box {
-    flex-direction: column;
-  }
-}
 .borba_people_box {
   width: 100%;
   padding: 90px 0 50px;
   display: flex;
   flex-direction: row;
   flex: 1;
+  @media (max-width: 1024px) {
+      flex-direction: column;
+  }
 }
-
+.employee{
+  flex: 1;
+}
 .employee-1 {
-  width: 50%;
   margin-right: 12px;
 }
-
 .employee-2 {
-  width: 50%;
   margin-right: 6px;
 }
 
@@ -298,6 +269,8 @@ a {
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
+  align-items: center;
+
 }
 
 .place {
@@ -308,8 +281,8 @@ a {
 }
 
 .employee_header-photo-1 {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   background-image: url("css/images/team1.jpeg");
   background-position: 50% 12%;
@@ -318,8 +291,8 @@ a {
 }
 
 .employee_header-photo-2 {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   background-image: url("css/images/team2.jpeg");
   background-position: 50% 12%;
   background-size: cover;
@@ -329,7 +302,6 @@ a {
 
 .employee_header-details {
   margin-left: 10px;
-  margin-top: 65px;
 }
 
 .employee-name {
@@ -353,22 +325,22 @@ a {
   margin-top: 0;
 }
 
-@media all and (max-width: 420px) {
-  .borba_contact_container {
-      flex-direction: column;
-      margin: 0 4em;
-  }
-}
-
 .borba_contact_container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   margin-bottom: 55px;
+  @media (max-width: 1024px) {
+      flex-direction: column;
+  }
 }
 
-.borba_contact-form {
-  width: 70%;
+.borba_contact {
+  width: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .borba_contact-adress {
@@ -406,7 +378,7 @@ a {
 }
 
 .borba-contact__input {
-  width: 80%;
+  width: 90%;
   border-radius: 4px;
   border: 1px solid rgba(#263f70, 0.64);
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -420,7 +392,9 @@ a {
 .borba-contact__input::placeholder {
   color: #BDC6CD;
 }
-
+.contact-form__wrapper{
+  display: flex;
+}
 .borba-contact__textarea {
   width: 80%;
   border-radius: 4px;
@@ -470,6 +444,49 @@ a {
       color: #263f70;
       text-align: left;
       font-weight: lighter;
-
     }
+}
+.mobile {
+  display: none;
+  @media (max-width: 768px){
+    display: block;
+  }
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 28px;
+  justify-content: space-between;
+  z-index: 99;
+  position: fixed;
+  right: 1.5em;
+  top: 24px;
+  @media (min-width: 769px){
+    display: none;
+  }
+}
+
+.hamburger-icon__stripe {
+  height: 4px;
+  width: 29px;
+  background-color: #263f70;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.hamburger-open div {
+  background-color: #263f70;
+}
+
+.hamburger-open #stripe-two {
+  width: 0;
+}
+
+.hamburger-open #stripe-one {
+  transform: translateY(12px) rotate(45deg);
+}
+
+.hamburger-open #stripe-three {
+  transform: translateY(-12px) rotate(-45deg);
 }
